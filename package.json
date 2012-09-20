@@ -1,0 +1,20 @@
+{
+  "author": "Niall O'Higgins <niallo@beyondfog.com> (http://beyondfog.com)",
+  "name": "strider-sauce-sample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/niallo/strider-sauce-sample",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niallo/strider-sauce-sample.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test":"echo test script",
+    "sauce":"echo sauce script"
+  }
+}
