@@ -31,6 +31,7 @@ describe("Selenium Tests: ", function() {
   })
 
   it("should have correct title", function(done) {
+    this.timeout(30000)
     browser.get(BASE_URL, function() {
       browser.title(function(err, title) {
         assert.ok(~title.indexOf('Page Title'), 'Wrong Title')
