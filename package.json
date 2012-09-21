@@ -21,6 +21,6 @@
   "scripts": {
     "test": "echo test script",
     "sauce": "./node_modules/mocha/bin/mocha -R tap test/sauce.js",
-    "start": "node index.js"
+    "start": "exec node index.js"
   }
 }
