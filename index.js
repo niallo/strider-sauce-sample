@@ -4,7 +4,7 @@ var app = require('tako')()
 app.route('/')
   .html(function (req, resp) {
     console.log("server got request for /")
-    resp.end('<html><head>cool</head><body>this is a body</body></html>')
+    resp.end('<html><head><title>Page Title</title></head><body>this is a body</body></html>')
   })
   .methods('GET')
 

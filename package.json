@@ -8,11 +8,11 @@
     "url": "git://github.com/niallo/strider-sauce-sample.git"
   },
   "dependencies": {
-    "tako": "~0.3.0",
+    "tako": "~0.3.0"
   },
   "devDependencies": {
     "wd": "~0.1.0",
-    "mocha": "~1.5.0".
+    "mocha": "~1.5.0"
   },
   "optionalDependencies": {},
   "engines": {
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "echo test script",
-    "sauce": "echo sauce script",
+    "sauce": "./node_modules/mocha/bin/mocha -R tap test/sauce.js",
     "start": "node index.js"
   }
 }
