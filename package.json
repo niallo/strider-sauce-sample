@@ -7,15 +7,17 @@
     "type": "git",
     "url": "git://github.com/niallo/strider-sauce-sample.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tako": "~0.3.0"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "test":"echo test script",
-    "sauce":"echo sauce script",
-    "start":"echo NPM start"
+    "test": "echo test script",
+    "sauce": "echo sauce script",
+    "start": "node index.js"
   }
 }
