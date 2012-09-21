@@ -10,6 +10,7 @@ browser = wd.remote(
 var REMOTE_HOST = 'http://localhost'
 var REMOTE_PORT = process.env.PORT || 8000
 var BASE_URL = REMOTE_HOST + ":" + REMOTE_PORT + "/"
+console.log("BASE_URL: %s", BASE_URL)
 
 var desired = {
   browserName: 'iphone',
@@ -20,12 +21,12 @@ var desired = {
 
 describe("Selenium Tests: ", function() {
 
-  beforeEach(function(done) {
+  before(function(done) {
     this.timeout(90000)
     browser.init(desired, done)
   })
 
-  afterEach(function(done) {
+  after(function(done) {
     this.timeout(10000)
     browser.quit(done)
   })
@@ -34,6 +35,7 @@ describe("Selenium Tests: ", function() {
     this.timeout(30000)
     browser.get(BASE_URL, function() {
       browser.title(function(err, title) {
+        console.log("err: %s title: %s", err, title)
         assert.ok(~title.indexOf('Page Title'), 'Wrong Title')
         done()
       })
