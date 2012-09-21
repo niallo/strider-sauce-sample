@@ -16,7 +16,7 @@ var desired = {
   browserName: 'iphone',
   version: '5.0',
   platform: 'Mac 10.6',
-  name: "Mobile Summit selenium test"
+  name: "strider-sauce-sample"
 }
 
 describe("Selenium Tests: ", function() {
@@ -35,7 +35,6 @@ describe("Selenium Tests: ", function() {
     this.timeout(30000)
     browser.get(BASE_URL, function() {
       browser.title(function(err, title) {
-        console.log("err: %s title: %s", err, title)
         assert.ok(~title.indexOf('Page Title'), 'Wrong Title')
         done()
       })
