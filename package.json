@@ -8,9 +8,12 @@
     "url": "git://github.com/niallo/strider-sauce-sample.git"
   },
   "dependencies": {
-    "tako": "~0.3.0"
+    "tako": "~0.3.0",
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "wd": "~0.1.0",
+    "mocha": "~1.5.0".
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
