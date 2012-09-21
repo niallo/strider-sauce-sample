@@ -15,6 +15,7 @@
   },
   "scripts": {
     "test":"echo test script",
-    "sauce":"echo sauce script"
+    "sauce":"echo sauce script",
+    "start":"echo NPM start"
   }
 }
