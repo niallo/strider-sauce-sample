@@ -21,7 +21,7 @@ var desired = {
 describe("Selenium Tests: ", function() {
 
   beforeEach(function(done) {
-    this.timeout(20000)
+    this.timeout(90000)
     browser.init(desired, done)
   })
 
