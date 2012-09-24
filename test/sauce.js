@@ -13,9 +13,9 @@ var BASE_URL = REMOTE_HOST + ":" + REMOTE_PORT + "/"
 console.log("BASE_URL: %s", BASE_URL)
 
 var desired = {
-  browserName: 'iphone',
-  version: '5.0',
-  platform: 'Mac 10.6',
+  browserName: 'chrome',
+  version: '',
+  platform: 'linux',
   name: "strider-sauce-sample"
 }
 
