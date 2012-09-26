@@ -9,6 +9,6 @@ app.route('/')
   .methods('GET')
 
 var port = process.env.PORT || 8000
-app.httpServer.listen(port)
+app.httpServer.listen(port, "localhost")
 
 console.log("tako server listening on port %d", port)
