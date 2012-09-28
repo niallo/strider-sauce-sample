@@ -13,9 +13,9 @@ var BASE_URL = REMOTE_HOST + ":" + REMOTE_PORT + "/"
 console.log("BASE_URL: %s", BASE_URL)
 
 var desired = {
-  browserName: 'chrome',
-  version: '',
-  platform: 'linux',
+  browserName: process.env.SAUCE_BROWSER || 'chrome',
+  version: process.env.SAUCE_BROWSER_VERSION || '',
+  platform: process.env.SAUCE_OS || 'linux',
   name: "strider-sauce-sample"
 }
 
