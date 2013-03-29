@@ -11,8 +11,8 @@
     "tako": "~0.3.0"
   },
   "devDependencies": {
-    "wd": "~0.1.0",
-    "mocha": "~1.5.0"
+    "mocha": "~1.5.0",
+    "wd": "0.0.31"
   },
   "optionalDependencies": {},
   "engines": {
