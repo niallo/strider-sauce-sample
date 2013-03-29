@@ -1,14 +1,14 @@
 {
-  "author": "Niall O'Higgins <niallo@beyondfog.com> (http://beyondfog.com)",
+  "author": "Niall O'Higgins <niallo@frozenridge.co> (http://frozenridge.co)",
   "name": "strider-sauce-sample",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/niallo/strider-sauce-sample",
   "repository": {
     "type": "git",
     "url": "git://github.com/niallo/strider-sauce-sample.git"
   },
   "dependencies": {
-    "tako": "~0.3.0"
+    "hapi": "~0.15.8"
   },
   "devDependencies": {
     "mocha": "~1.5.0",
@@ -16,8 +16,8 @@
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": ">= 0.8.x",
+    "npm": ">= 1.1.x"
   },
   "scripts": {
     "test": "echo test script ; echo CUSTOM_VAR is $CUSTOM_VAR",
