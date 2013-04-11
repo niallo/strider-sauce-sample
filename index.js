@@ -7,7 +7,8 @@ var server = new Hapi.Server('localhost', parseInt(port, 10));
 // Define the route
 var index = {
     handler: function (request) {
-        request.reply('<html><head><title>Page Title</title></head><body>this is a body</body></html>')
+      console.log("strider-sauce-sample: request on /")
+      request.reply('<html><head><title>Page Title</title></head><body>this is a body</body></html>')
     }
 };
 
