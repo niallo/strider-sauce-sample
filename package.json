@@ -21,7 +21,6 @@
   },
   "scripts": {
     "test": "echo test script ; echo CUSTOM_VAR is $CUSTOM_VAR",
-    "sauce": "./node_modules/mocha/bin/mocha -R tap test/sauce.js",
     "start": "$(test -x ~/bin/node && echo ~/bin/node || echo node) index.js"
   }
 }
